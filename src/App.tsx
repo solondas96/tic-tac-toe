@@ -704,8 +704,15 @@ function App() {
 
       <header className="topbar panel">
         <div>
-          <p className="eyebrow">Material-inspired strategy board</p>
-          <h1>Tic Tac Toe</h1>
+          <div className="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 64 64" role="img">
+              <rect x="4" y="4" width="56" height="56" rx="14" className="logo-frame" />
+              <path d="M24 16v32M40 16v32M16 24h32M16 40h32" className="logo-grid" />
+              <path d="M19 19l8 8m0-8l-8 8" className="logo-x" />
+              <circle cx="46" cy="46" r="4.8" className="logo-o" />
+            </svg>
+          </div>
+          <h1>XOXO</h1>
           <p className="subtitle">Mode: {modeLabel} · Difficulty: {settings.difficulty} · Tournament: {settings.tournamentLength ? `best of ${settings.tournamentLength}` : 'off'}</p>
         </div>
 
