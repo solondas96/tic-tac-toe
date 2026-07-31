@@ -1,0 +1,92 @@
+:root {
+  color-scheme: dark;
+  --bg: #08070d;
+  --bg-soft: #11111c;
+  --surface: rgba(18, 18, 28, 0.86);
+  --surface-strong: rgba(27, 27, 41, 0.94);
+  --text: #b6b2ca;
+  --text-strong: #f6f5ff;
+  --text-muted: #8c88a3;
+  --accent: #a855f7;
+  --accent-strong: #d946ef;
+  --accent-soft: #c084fc;
+  --warning: #fbbf24;
+  --danger: #fb7185;
+  --good: #22c55e;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 26px 60px rgba(0, 0, 0, 0.35);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(168, 85, 247, 0.14), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.08), transparent 28%),
+    linear-gradient(180deg, #0b0912 0%, #08070d 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f6f2fb;
+  --bg-soft: #efe8fb;
+  --surface: rgba(255, 255, 255, 0.84);
+  --surface-strong: rgba(255, 255, 255, 0.95);
+  --text: #5c5a6f;
+  --text-strong: #19152c;
+  --text-muted: #736e8c;
+  --accent: #7c3aed;
+  --accent-strong: #a855f7;
+  --accent-soft: #8b5cf6;
+  --warning: #d97706;
+  --danger: #e11d48;
+  --good: #16a34a;
+  --border: rgba(31, 20, 53, 0.08);
+  --shadow: 0 26px 60px rgba(74, 29, 121, 0.12);
+  background:
+    radial-gradient(circle at top left, rgba(168, 85, 247, 0.16), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.08), transparent 26%),
+    linear-gradient(180deg, #fbf9ff 0%, #f2ebfb 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+select {
+  outline: none;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}

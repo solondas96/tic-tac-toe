@@ -1,0 +1,32 @@
+# Headroom Configuration
+# Token optimization for AI coding agents
+
+[compression]
+enabled = true
+mode = "aggressive"
+
+[cache]
+ttl_hours = 24
+max_size_mb = 500
+
+[content_routing]
+# Smart compression routing for different content types
+json_compression = "smart_crusher"
+code_compression = "ast"
+text_compression = "kompress-v2-base"
+
+[output_shaping]
+# Reduce output tokens (trim verbose model responses)
+enabled = true
+verbosity = "concise"
+effort_routing = true
+
+[memory]
+# Cross-agent memory for consistent context
+enabled = true
+dedup = true
+
+[reversible]
+# CCR (Content Cache & Retrieve) - store originals for retrieval
+enabled = true
+cache_strategy = "local"
