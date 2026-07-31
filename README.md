@@ -1,4 +1,4 @@
-# Tic-Tac-Toe Game
+# XOXO
 
 A lightweight, Material Design tic-tac-toe game with an unbeatable AI opponent using the minimax algorithm. Built with vanilla JavaScript, CSS, and HTML—no frameworks or build tools required.
 
