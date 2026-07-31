@@ -55,6 +55,50 @@
   gap: 20px;
 }
 
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.brand-mark svg {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-frame {
+  fill: rgba(255, 255, 255, 0.06);
+  stroke: rgba(255, 255, 255, 0.2);
+  stroke-width: 1.4;
+}
+
+[data-theme='light'] .logo-frame {
+  fill: rgba(31, 20, 53, 0.05);
+  stroke: rgba(31, 20, 53, 0.18);
+}
+
+.logo-grid {
+  fill: none;
+  stroke: var(--accent-soft);
+  stroke-width: 2;
+  stroke-linecap: round;
+  opacity: 0.9;
+}
+
+.logo-x {
+  fill: none;
+  stroke: #38bdf8;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+}
+
+.logo-o {
+  fill: none;
+  stroke: #fb7185;
+  stroke-width: 2.8;
+}
+
 .topbar h1,
 .hero-card h2,
 .players-card h2,
